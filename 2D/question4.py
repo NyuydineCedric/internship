@@ -19,6 +19,6 @@ def filter_primes(numbers):
     return primes
 
 
-numbers = [4, 7, 10, 13, 15, 17, 18, 19]
+numbers = [4, 6, 7, 9, 10, 13, 15, 16, 17, 18, 19,21]
 
 print(filter_primes(numbers))

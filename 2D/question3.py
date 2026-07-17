@@ -12,7 +12,7 @@ def cart_total(cart):
 
 
 cart = {
-    "apple": {"price": 0.5, "quantity": 4},
+    "apple": {"price": 10, "quantity": 4},
     "bread": {"price": 2.5, "quantity": 2},
     "milk": {"price": 1.2, "quantity": 3}
 }

@@ -27,8 +27,8 @@ def top_student(averages):
 
 
 students = [
-    {"name": "Alice", "marks": [85, 90, 78]},
-    {"name": "Bob", "marks": [60, 55, 70]},
+    {"name": "James", "marks": [70, 90, 90]},
+    {"name": "John", "marks": [66, 55, 70]},
     {"name": "Cara", "marks": [95, 92, 89]}
 ]
 
