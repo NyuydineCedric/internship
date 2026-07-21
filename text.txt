@@ -1,0 +1,75 @@
+"The first function loops through every employee,
+ checks whether the employee worked overtime, 
+ calculates the total salary, and stores the 
+ employee's name together with the salary in a dictionary. 
+ The second function loops through that dictionary, 
+ compares every employee's salary,
+ keeps track of the highest salary found,
+and finally returns the name of the employee
+with the highest pay."
+
+
+Question 2: Matrix Operations
+
+"The first function creates a new matrix by changing the rows into columns 
+using nested loops. The second function loops through every row and every number 
+in the matrix, adding them together to find the total sum. The third function loops 
+through each row, calculates its sum, compares it with the largest sum found so far, 
+and returns the index of the row with the highest sum."
+
+Question 4: Nested Order Summary
+
+"The first function loops through each customer and then loops through all the 
+items they bought. It calculates the total amount spent by multiplying the price by 
+the quantity for each item and stores the total in a dictionary. The second function 
+calls the first function to get the totals, then loops through the totals, compares 
+each customer's spending, and returns the name of the customer who spent the most."
+
+Question 5: Bubble Sort
+
+"The first function uses nested loops to compare two neighbouring numbers. 
+If they are in the wrong order, it swaps them. This process continues until 
+all the numbers are sorted in ascending order. The second function works the same way, 
+but the comparison is reversed so that the numbers are sorted in descending order instead."
+
+Question 6: Library Book Tracker
+
+"The first function loops through all the books in the library 
+and checks if there are any copies available. If there are, it adds 
+the title to a list. The second function checks whether the requested 
+book exists and whether a copy is available before increasing the number of 
+borrowed copies. The third function checks whether the book exists and 
+decreases the number of borrowed copies, making sure it never goes below zero."
+
+Question 7: Number Guessing Game
+
+"This function uses a loop to allow the user to guess a number. 
+After each guess, it compares the guess with the secret number and 
+ells the user whether the guess is too high, too low, or correct. 
+The loop stops when the user guesses correctly or reaches the maximum 
+number of attempts, and it displays the number of attempts used."
+
+Question 8: Word Frequency Ranking
+
+"The function first loops through all the words in the text and 
+counts how many times each word appears using a dictionary. 
+It then repeatedly searches for the word with the highest frequency, 
+adds it to the result list, resets its count, and continues until it 
+has found the required number of most frequent words."
+
+Question 9: Seating Chart Validator
+
+"The function uses nested loops to go through every 
+seat in the classroom. It counts the total number of seats,
+counts how many are occupied, checks whether an entire row is empty, 
+and stores the indices of empty rows in a list. Finally, 
+it returns all this information in a dictionary."
+
+Question 10: Simple Bank Account Simulation
+
+"The function loops through each transaction one by one.
+ If the transaction is a deposit, it adds the amount to the balance. 
+ If it is a withdrawal, it first checks whether there is enough money 
+ before subtracting the amount. If there are insufficient funds, it skips 
+ the transaction and records it as a failed transaction.
+ At the end, it returns the final balance together with the list of failed transactions."
