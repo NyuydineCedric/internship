@@ -3,7 +3,7 @@
 def transpose(matrix):
     
     result = []
-
+ 
     for column in range(len(matrix[0])):
         new_row = []
 
