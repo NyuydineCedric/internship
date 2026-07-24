@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import httpx
 
 st.title("Student Names")
 
@@ -30,3 +31,21 @@ df = pd.DataFrame({
 })
 
 st.write(df)
+
+if st.button("Get Students"):
+    try:
+        response = httpx.get("http://localhost:8000/students")
+        response.raise_for_status()
+        st.session_state['api_students'] = response.json()
+        
+    except Exception as e:
+        st.error(f"Failed to load students: {e}")
+
+if 'api_students' in st.session_state and st.session_state.api_students:
+    st.subheader("Students from FastAPI")
+    api_df = pd.DataFrame(st.session_state.api_students)
+    
+    if 'name' in api_df.columns and 'class' in api_df.columns:
+        api_df = api_df.rename(columns={"name": "Student Name", "class": "Class"})
+    
+    st.dataframe(api_df)
