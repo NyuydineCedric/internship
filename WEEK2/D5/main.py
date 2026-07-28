@@ -14,11 +14,11 @@ app.add_middleware(
 
 # Sample student data 
 students_db = [
-    {"name": "Alice Wonderland", "class": "Mathematics"},
-    {"name": "Bob Builder", "class": "Engineering"},
-    {"name": "Charlie Brown", "class": "Arts"},
-    {"name": "Diana Prince", "class": "History"},
-    {"name": "Ethan Hunt", "class": "Physics"},
+    {"name": "Alice Wonderland", "class": 7},
+    {"name": "Bob Builder", "class": 7},
+    {"name": "Charlie Brown", "class": 8},
+    {"name": "Diana Prince", "class": 9},
+    {"name": "Ethan Hunt", "class": 2},
 ]
 
 @app.get("/students")
