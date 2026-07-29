@@ -54,9 +54,3 @@ def ask_ai(q: Question):
     return StreamingResponse(token_stream(), media_type="text/plain")
 
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:5174"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
